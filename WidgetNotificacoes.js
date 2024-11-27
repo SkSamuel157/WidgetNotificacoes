@@ -42,6 +42,7 @@ const WidgetNotificacoes = () => {
             setNotificacoes((prev) => prev.filter((notificacao) => notificacao.id !== data.id));
         });
 
+
         return () => {
             pusher.unsubscribe('my-channel');
         };
